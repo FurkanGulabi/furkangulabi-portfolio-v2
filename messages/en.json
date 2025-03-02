@@ -1,0 +1,117 @@
+{
+  "Navigation": {
+    "Home": "Home",
+    "Resume": "Resume",
+    "Services": "Services",
+    "Contact": "Contact",
+    "Projects": "Projects"
+  },
+  "HomePage": {
+    "PageTitle": "Home | Furkan Gülabi",
+    "greeting": "Hello, It's",
+    "name": "Furkan Gülabi",
+    "professionPrefix": "I'm a",
+    "profession": "Fullstack Web Developer",
+    "description": "I develop projects tailored to your needs using modern technologies.",
+    "Charts": {
+      "yearsOfExperience": "Years of experience",
+      "projectsCompleted": "Projects completed",
+      "englishLevel": "English Level"
+    }
+  },
+  "Metadata": {
+    "description": "I develop projects tailored to your needs using modern technologies.",
+    "keywords": "portfolio, web development, software development, modern technologies, full stack developer, freelance developer, custom software, web design, mobile apps, responsive design, cloud solutions, AI tools, machine learning, e-commerce, freelance coding, API development, UI/UX design, blockchain, DevOps, cybersecurity",
+    "applicationName": "Furkan Gulabi's Portfolio"
+  },
+  "NotFound": {
+    "ImageError": "An error occurred while loading the image",
+    "PageTitle": "Page not found",
+    "Redirecting": "Redirecting to the homepage..."
+  },
+  "Manifest": {
+    "name": "FG"
+  },
+  "Footer": {
+    "Description": "A Web Developer Portfolio",
+    "Location": "Istanbul, Turkey",
+    "Copyrights": "All rights reserved.",
+    "FollowMe": "Follow Me"
+  },
+  "ResumePage": {
+    "PageTitle": "Resume",
+    "AboutMe": "About Me",
+    "Education": "Education",
+    "Experience": "Experience",
+    "Skills": "Skills",
+    "Quote": "The measure of a man is what he does with power",
+    "QuoteOwner": "-Plato",
+    "AboutMeDescription": "Hello, I'm Furkan. I have been involved with technology from a young age and have a strong ability to adapt to modern technologies easily. I am proficient in technological infrastructure, computer hardware, and web development. Through various projects, I have gained experience that has helped me improve my problem-solving and analytical skills. My goal is to contribute to innovative projects in the technology field, fostering both my personal and professional growth.",
+    "aboutMe": {
+      "title": "About Me",
+      "description": "Hello, I'm Furkan. I have been involved with technology from a young age and have a strong ability to adapt to modern technologies easily. I am proficient in technological infrastructure, computer hardware, and web development. Through various projects, I have gained experience that has helped me improve my problem-solving and analytical skills. My goal is to contribute to innovative projects in the technology field, fostering both my personal and professional growth."
+    },
+    "education": {
+      "title": "My Education",
+      "description": "My educational life",
+      "items": [
+        {
+          "institution": "Nahit Menteşe Vocational and Technical Anatolian High School",
+          "degree": "High School - Web Design",
+          "period": "September 2019 - June 2023"
+        },
+        {
+          "institution": "Istanbul Aydın University",
+          "degree": "Associate Degree - Internet and Network Technologies",
+          "period": "September 2024 - Ongoing"
+        }
+      ]
+    },
+    "experience": {
+      "title": "My Experience",
+      "description": "A summary of my professional background",
+      "items": [
+        {
+          "company": "Yalçın Furniture",
+          "position": "Apprentice - Journeyman",
+          "duration": "2016 - Present"
+        },
+        {
+          "company": "Arkun Production",
+          "position": "Cameraman",
+          "duration": "2023 - Present"
+        },
+        {
+          "company": "Freelance",
+          "position": "Web Designer",
+          "duration": "2022 - Present"
+        }
+      ]
+    },
+    "skills": {
+      "title": "My Skills",
+      "description": "That's I'm all about"
+    }
+  },
+  "ContactPage": {
+    "PageTitle": "Contact",
+    "title": "Let's work together",
+    "description": "\"I'm eager to collaborate! Send me a message, and I'll get back to you shortly.\"",
+    "quote": "\"The proper function of man is to live, not to exist\"",
+    "quoteOwner": "-Jack London",
+    "form": {
+      "name": "Name",
+      "Surname": "Surname",
+      "Email": "Email",
+      "Subject": "Subject",
+      "Message": "Message",
+      "Submit": "Send",
+      "SelectSubject": "Select Subject",
+      "WebDesign": "Web Design",
+      "BugFix": "Bug Fix",
+      "SeoOptimization": "SEO Optimization",
+      "Other": "Other",
+      "YourMessage": "Your Message..."
+    }
+  }
+}

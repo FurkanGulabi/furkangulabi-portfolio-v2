@@ -1,14 +1,14 @@
 "use client";
 
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export const links = [
   { id: "home", label: "Home", href: "/" },
   { id: "resume", label: "Resume", href: "/resume" },
   { id: "projects", label: "Projects", href: "/projects" },
-  { id: "services", label: "Services", href: "/services" },
   { id: "contact", label: "Contact", href: "/contact" },
 ];
 function normalizePath(path: string) {
@@ -23,6 +23,7 @@ function normalizePath(path: string) {
 }
 
 const DesktopNav = () => {
+  const t = useTranslations("Navigation");
   const pathname = usePathname();
 
   const normalizedPathname = normalizePath(pathname);
@@ -46,7 +47,7 @@ const DesktopNav = () => {
                   transition={{ duration: 0.3 }}
                 />
               )}
-              <span className="relative z-10">{link.label}</span>
+              <span className="relative z-10">{t(link.label)}</span>
             </Link>
           </li>
         );

@@ -2,9 +2,10 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 
-import { links } from "@/components/DesktopNav";
+import { links } from "@/components/layout/DesktopNav";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { CiMenuFries } from "react-icons/ci";
 
 function normalizePath(path: string) {
@@ -19,6 +20,7 @@ function normalizePath(path: string) {
 }
 
 const MobileNav = () => {
+  const t = useTranslations("Navigation");
   const pathname = usePathname();
   const normalizedPathname = normalizePath(pathname);
   return (
@@ -62,7 +64,7 @@ const MobileNav = () => {
                       />
                     )}
                     <span className="relative z-10 mix-blend-exclusion">
-                      {link.label}
+                      {t(link.label)}
                     </span>
                   </Link>
                 </li>

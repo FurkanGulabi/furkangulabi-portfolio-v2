@@ -7,8 +7,54 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
+  /* Define breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Define transition duration */
+
+  /* Animation durations */
+  --animation-duration-fast: 0.2s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.5s;
+
+  /* Spring animation configs */
+  --spring-stiffness: 200;
+  --spring-damping: 20;
+}
+@layer components {
+  .container {
+    @apply px-4; /* DEFAULT padding (1rem) */
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      @apply px-8; /* 2rem */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      @apply px-4; /* 1rem */
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      @apply px-4; /* 1rem */
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      @apply px-12; /* 3rem */
+    }
+  }
+}
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
@@ -47,7 +93,7 @@
 }
 
 .dark {
-  --background: oklch(0.1 0.01 260);
+  --background: oklch(0.13 0.01 260);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.1 0.01 260);
   --card-foreground: oklch(0.98 0 0);
@@ -61,7 +107,7 @@
   --muted-foreground: oklch(0.6 0.02 260);
   --accent: oklch(0.2 0.02 260);
   --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.4 0.15 20);
+  --destructive: oklch(48.8 98.49 20.86);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.2 0.02 260);
   --input: oklch(0.2 0.02 260);
@@ -136,15 +182,6 @@
   }
   h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-extrabold;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }
 

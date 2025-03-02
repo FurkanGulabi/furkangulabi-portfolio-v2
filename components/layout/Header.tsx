@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import React, { Suspense } from "react";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
@@ -12,7 +12,7 @@ const Header = () => {
           href={"/"}
           className="flex items-center justify-center gap-4 group"
         >
-          <span className="w-12 h-12 bg-primary rounded-full blur-[px] shadow-primary shadow-custom group-hover:shadow-[0_0_20px] transition-shadow duration-300"></span>
+          <span className="w-12 h-12 bg-primary rounded-full blur-[px] shadow-primary shadow-[0_0_15px] group-hover:shadow-[0_0_20px] transition-shadow duration-300"></span>
           <h2 className="text-4xl font-bold ">Furkan</h2>
         </Link>
         {/* Navigation */}

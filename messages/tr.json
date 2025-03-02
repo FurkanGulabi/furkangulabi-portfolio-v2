@@ -1,0 +1,116 @@
+{
+  "Navigation": {
+    "Home": "Anasayfa",
+    "Resume": "Özgeçmiş",
+    "Services": "Servisler",
+    "Contact": "İletişim",
+    "Projects": "Projeler"
+  },
+  "HomePage": {
+    "PageTitle": "Anasayfa | Furkan Gülabi",
+    "greeting": "Merhaba, Ben",
+    "name": "Furkan Gülabi",
+    "professionPrefix": "Ben",
+    "profession": "Fullstack Web Geliştiricisiyim",
+    "description": "Modern teknolojileri kullanarak isteğinize uygun projeler geliştiriyorum",
+    "Charts": {
+      "yearsOfExperience": "Yıllık deneyim",
+      "projectsCompleted": "Tamamlanan projele",
+      "englishLevel": "İngilizce seviyesi"
+    }
+  },
+  "Metadata": {
+    "description": "Modern teknolojiler kullanarak ihtiyaçlarınıza uygun projeler geliştiriyorum.",
+    "keywords": "portföy, web geliştirme, yazılım geliştirme, modern teknolojiler, tam yığın geliştirici, serbest geliştirici, özel yazılım, web tasarımı, mobil uygulamalar, duyarlı tasarım, bulut çözümleri, yapay zeka araçları, makine öğrenimi, e-ticaret, serbest kodlama, API geliştirme, UI/UX tasarımı, blok zinciri, DevOps, siber güvenlik",
+    "applicationName": "Furkan Gülabi'nin Portföyü"
+  },
+  "NotFound": {
+    "ImageError": "Resim yüklenirken bir hata oluştu",
+    "PageTitle": "Sayfa bulunamadı",
+    "Redirecting": "Anasayfaya yönlendiriliyorsunuz..."
+  },
+  "Manifest": {
+    "name": "FG"
+  },
+  "Footer": {
+    "Description": "Web Geliştirici Portföyü",
+    "Location": "İstanbul, Türkiye",
+    "Copyrights": "Tüm hakları saklıdır.",
+    "FollowMe": "Beni takip et"
+  },
+  "ResumePage": {
+    "PageTitle": "Özgeçmiş",
+    "AboutMe": "Hakkımda",
+    "Education": "Eğitimim",
+    "Experience": "Tecrübem",
+    "Skills": "Yeteneklerim",
+    "Quote": "Bir adamın ölçüsü, gücüyle ne yaptığıdır.",
+    "QuoteOwner": "-Plato",
+    "aboutMe": {
+      "title": "Hakkımda",
+      "description": " Merhaba, ben Furkan. Küçük yaşlardan beri teknoloji ile iç içeyim ve sürekli öğrenmeye açık, modern teknolojilere kolayca uyum sağlayabilen biriyim. Teknolojik altyapı, bilgisayar donanımı ve web geliştirme konularında yetkinlik sahibiyim. Çeşitli projelerde edindiğim deneyimler sayesinde sorun çözme ve analizi gibi konularında kendimi geliştirdim. Hedefim, teknoloji alanında yenilikçi projelerde yer alarak hem kişisel hem de profesyonel gelişimime katkı sağlamak"
+    },
+    "education": {
+      "title": "Eğitimim",
+      "description": "Eğitim hayatım",
+      "items": [
+        {
+          "institution": "Nahit Menteşe Meskleki ve Teknik Anadolu Lisesi",
+          "degree": "Lise - Web Tasarımı",
+          "period": "Eylül 2019 - Haziran 2023"
+        },
+        {
+          "institution": "İstanbul Aydın Üniversitesi",
+          "degree": "Önlisans - İnternet ve Ağ Teknolojileri",
+          "period": "Eylül 2024 - Devam ediyor"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Tecrübem",
+      "description": "Profesyonel hayatımın kısa bir özeti",
+      "items": [
+        {
+          "company": "Yalçın Mobilya",
+          "position": "Çırak - Kalfa",
+          "duration": "2016 - Devam ediyor"
+        },
+        {
+          "company": "Arkun Prodüksiyon",
+          "position": "Kameraman",
+          "duration": "2023 - Devam ediyor"
+        },
+        {
+          "company": "Serbest Meslek",
+          "position": "Web Tasarımı",
+          "duration": "2022 - Devam ediyor"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Yeteneklerim",
+      "description": "Bundan ibaretim"
+    }
+  },
+  "ContactPage": {
+    "PageTitle": "İletişim",
+    "title": "Birlikte çalışalım",
+    "description": "\"İş birliği yapmayı sabırsızlıkla bekliyorum! Bana bir mesaj gönderin, size en kısa sürede geri döneceğim.\"",
+    "quote": "\"Bir erkeğin işlevi var olmak değil yaşamaktır.\"",
+    "quoteOwner": "-Jack London",
+    "form": {
+      "name": "İsim",
+      "Surname": "Soyisim",
+      "Email": "E-posta",
+      "Subject": "Konu",
+      "Message": "Mesaj",
+      "Submit": "Gönder",
+      "SelectSubject": "Konu seçin",
+      "WebDesign": "Web Tasarımı",
+      "BugFix": "Hata Düzeltme",
+      "SeoOptimization": "SEO Optimizasyonu",
+      "Other": "Diğer",
+      "YourMessage": "Mesajınız..."
+    }
+  }
+}
