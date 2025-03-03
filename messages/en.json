@@ -30,7 +30,9 @@
     "Redirecting": "Redirecting to the homepage..."
   },
   "Manifest": {
-    "name": "FG"
+    "name": "FG",
+    "shortName": "FG Portfolio",
+    "description": "Furkan Gülabi's Web Developer Portfolio"
   },
   "Footer": {
     "Description": "A Web Developer Portfolio",
@@ -41,6 +43,7 @@
   "ResumePage": {
     "PageTitle": "Resume",
     "AboutMe": "About Me",
+    "ResumeCategories": "Resume Categories",
     "Education": "Education",
     "Experience": "Experience",
     "Skills": "Skills",
@@ -100,6 +103,7 @@
     "quote": "\"The proper function of man is to live, not to exist\"",
     "quoteOwner": "-Jack London",
     "form": {
+      "title": "Contact Me",
       "name": "Name",
       "Surname": "Surname",
       "Email": "Email",
@@ -112,6 +116,26 @@
       "SeoOptimization": "SEO Optimization",
       "Other": "Other",
       "YourMessage": "Your Message..."
+    }
+  },
+  "ProjectsPage": {
+    "PageTitle": "Projects",
+    "LiveButton": "View Project",
+    "projectImageAlt": "Screenshot of {title} project",
+    "technologiesLabel": "Project technologies",
+    "liveButtonAriaLabel": "View Project of {title}",
+    "githubButtonAriaLabel": "View source code for {title} on GitHub",
+    "getitdone": {
+      "title": "Get It Done",
+      "description": "Get It Done is a simple todo list app that helps you get things done. It is built with React and Redux."
+    },
+    "rplace": {
+      "title": "r/place clone",
+      "description": "A clone of Reddit's r/place project. Users can draw on a canvas with a color of their choice. The project is built with React and Firebase."
+    },
+    "PGenerator": {
+      "title": "Smart Password Generator",
+      "description": "A smart password generator that generates strong passwords based on user input. The project is built with React."
     }
   }
 }

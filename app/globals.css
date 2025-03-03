@@ -261,3 +261,16 @@
 .animate-fifth {
   animation: circleDiagonal 20s ease infinite;
 }
+
+.unblur {
+  animation: unblur 1s linear !important;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0);
+  }
+}

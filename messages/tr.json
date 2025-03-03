@@ -30,7 +30,9 @@
     "Redirecting": "Anasayfaya yönlendiriliyorsunuz..."
   },
   "Manifest": {
-    "name": "FG"
+    "name": "FG",
+    "shortName": "FG Portföy",
+    "description": "Furkan Gülabi'nin Web Geliştirici Portföyü"
   },
   "Footer": {
     "Description": "Web Geliştirici Portföyü",
@@ -41,6 +43,8 @@
   "ResumePage": {
     "PageTitle": "Özgeçmiş",
     "AboutMe": "Hakkımda",
+    "ResumeCategories": "Özgeçmiş Kategorileri",
+
     "Education": "Eğitimim",
     "Experience": "Tecrübem",
     "Skills": "Yeteneklerim",
@@ -99,6 +103,8 @@
     "quote": "\"Bir erkeğin işlevi var olmak değil yaşamaktır.\"",
     "quoteOwner": "-Jack London",
     "form": {
+      "title": "Bana ulaşın",
+
       "name": "İsim",
       "Surname": "Soyisim",
       "Email": "E-posta",
@@ -111,6 +117,27 @@
       "SeoOptimization": "SEO Optimizasyonu",
       "Other": "Diğer",
       "YourMessage": "Mesajınız..."
+    }
+  },
+  "ProjectsPage": {
+    "PageTitle": "Projeler",
+    "title": "Projelerim",
+    "LiveButton": "Projeyi Görüntüle",
+    "projectImageAlt": "{title} projesinin ekran görüntüsü",
+    "technologiesLabel": "Proje teknolojileri",
+    "liveButtonAriaLabel": "{title} projesinin canlı görüntüle",
+    "githubButtonAriaLabel": "{title} projesinin kaynak kodunu GitHub'da görüntüle",
+    "getitdone": {
+      "title": "Get It Done",
+      "description": "Get It Done, sizi işlerinizi halletmenize yardımcı olan basit bir yapılacaklar listesi uygulamasıdır. React ve Redux ile oluşturulmuştur."
+    },
+    "rplace": {
+      "title": "r/place klonu",
+      "description": "Reddit'in r/place projesinin bir klonu. Kullanıcılar, kendi seçtikleri bir renkle tuval üzerine çizebilirler. Proje, React ve Firebase ile oluşturulmuştur."
+    },
+    "PGenerator": {
+      "title": "Akıllı Şifre Oluşturucu",
+      "description": "Kullanıcı girişine dayalı güçlü şifreler oluşturan akıllı bir şifre oluşturucu. Proje, React ile oluşturulmuştur."
     }
   }
 }

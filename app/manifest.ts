@@ -10,7 +10,30 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
 
   return {
     name: t("name"),
-    start_url: "/",
-    theme_color: "#101E33",
+    short_name: t("shortName"),
+    description: t("description"),
+    start_url: `/${routing.defaultLocale}`,
+    display: "standalone",
+    background_color: "#121212",
+    theme_color: "#121212",
+    icons: [
+      {
+        src: "/favicon.ico",
+        sizes: "any",
+        type: "image/x-icon",
+      },
+    ],
+    lang: routing.defaultLocale,
+    dir: "ltr",
+    prefer_related_applications: false,
+    categories: ["portfolio", "web development", "developer"],
+    screenshots: [
+      {
+        src: "/screenshot.jpg",
+        sizes: "1280x720",
+        type: "image/png",
+        label: "Homepage of Furkan Gülabi's Portfolio",
+      },
+    ],
   };
 }

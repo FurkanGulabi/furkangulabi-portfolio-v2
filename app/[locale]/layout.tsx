@@ -109,7 +109,7 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={`${PoppinsFont.variable} antialiased min-h-screen`}>
         <Providers
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

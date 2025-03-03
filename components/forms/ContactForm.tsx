@@ -40,7 +40,6 @@ export function ContactForm() {
       name: "",
       surname: "",
       email: "",
-
       subject: "",
       message: "",
     },
@@ -66,6 +65,8 @@ export function ContactForm() {
       <form
         className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg"
         onSubmit={form.handleSubmit(onSubmit)}
+        aria-label={t("form.title") || "Contact Form"}
+        noValidate
       >
         {/* Name and Surname */}
         <FormField
@@ -73,11 +74,17 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("form.name")}</FormLabel>
+              <FormLabel htmlFor="name">{t("form.name")}</FormLabel>
               <FormControl>
-                <Input placeholder={t("form.name")} {...field} />
+                <Input
+                  id="name"
+                  placeholder={t("form.name")}
+                  {...field}
+                  aria-required="true"
+                  aria-invalid={!!form.formState.errors.name}
+                />
               </FormControl>
-              <FormMessage className="text-destructive" />
+              <FormMessage className="text-destructive" role="alert" />
             </FormItem>
           )}
         />
@@ -87,27 +94,40 @@ export function ContactForm() {
           name="surname"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("form.Surname")}</FormLabel>
+              <FormLabel htmlFor="surname">{t("form.Surname")}</FormLabel>
               <FormControl>
-                <Input placeholder={t("form.Surname")} {...field} />
+                <Input
+                  id="surname"
+                  placeholder={t("form.Surname")}
+                  {...field}
+                  aria-required="true"
+                  aria-invalid={!!form.formState.errors.surname}
+                />
               </FormControl>
-              <FormMessage className="text-destructive" />
+              <FormMessage className="text-destructive" role="alert" />
             </FormItem>
           )}
         />
 
-        {/* Email and Phone */}
+        {/* Email */}
         <div className="sm:col-span-2">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("form.Email")}</FormLabel>
+                <FormLabel htmlFor="email">{t("form.Email")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="me@example.com" {...field} />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    {...field}
+                    aria-required="true"
+                    aria-invalid={!!form.formState.errors.email}
+                  />
                 </FormControl>
-                <FormMessage className="text-destructive" />
+                <FormMessage className="text-destructive" role="alert" />
               </FormItem>
             )}
           />
@@ -120,13 +140,18 @@ export function ContactForm() {
             name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("form.Subject")}</FormLabel>
+                <FormLabel htmlFor="subject">{t("form.Subject")}</FormLabel>
                 <FormControl>
                   <Select
                     value={field.value || ""}
                     onValueChange={field.onChange}
+                    name="subject"
                   >
-                    <SelectTrigger>
+                    <SelectTrigger
+                      id="subject"
+                      aria-required="true"
+                      aria-invalid={!!form.formState.errors.subject}
+                    >
                       <SelectValue placeholder={t("form.SelectSubject")} />
                     </SelectTrigger>
                     <SelectContent>
@@ -146,7 +171,7 @@ export function ContactForm() {
                     </SelectContent>
                   </Select>
                 </FormControl>
-                <FormMessage className="text-destructive" />
+                <FormMessage className="text-destructive" role="alert" />
               </FormItem>
             )}
           />
@@ -159,16 +184,19 @@ export function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("form.Message")}</FormLabel>
+                <FormLabel htmlFor="message">{t("form.Message")}</FormLabel>
                 <FormControl>
                   <Textarea
+                    id="message"
                     className="max-h-52 min-h-40 custom-scrollbar"
                     maxLength={1024}
                     placeholder={t("form.YourMessage")}
                     {...field}
+                    aria-required="true"
+                    aria-invalid={!!form.formState.errors.message}
                   />
                 </FormControl>
-                <FormMessage className="text-destructive" />
+                <FormMessage className="text-destructive" role="alert" />
               </FormItem>
             )}
           />
@@ -179,7 +207,8 @@ export function ContactForm() {
           <Button
             type="submit"
             disabled={isPending}
-            className="w-full flex justify-center items-center gap-3 "
+            className="w-full flex justify-center items-center gap-3"
+            aria-busy={isPending}
           >
             {isPending && (
               <motion.span
@@ -192,6 +221,8 @@ export function ContactForm() {
                   repeatType: "reverse",
                 }}
                 className="w-5 h-5 rounded-full bg-primary invert shadow-custom shadow-primary"
+                aria-hidden="true"
+                role="progressbar"
               ></motion.span>
             )}
             {t("form.Submit")}

@@ -1,13 +1,10 @@
 import { NotFound as NotFoundComponent } from "@/components/common/NotFound";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}) {
+export async function generateMetadata() {
+  const locale = await getLocale();
   const t = await getTranslations({
-    locale: params.locale,
+    locale: locale,
     namespace: "NotFound",
   });
 

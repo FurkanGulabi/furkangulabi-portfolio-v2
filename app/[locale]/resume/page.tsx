@@ -1,12 +1,8 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import ResumeContent from "./ResumeContent";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}) {
-  const { locale } = await params;
+export async function generateMetadata() {
+  const locale = await getLocale();
   setRequestLocale(locale);
   const t = await getTranslations({
     locale: locale,
@@ -18,14 +14,14 @@ export async function generateMetadata({
   };
 }
 
-export default async function ResumePage({
-  params,
-}: {
-  params: { locale: string };
-}) {
-  // Set the locale for the request
-  const { locale } = await params;
+export default async function ResumePage() {
+  // Get the locale using getLocale instead of from params
+  const locale = await getLocale();
   setRequestLocale(locale);
 
-  return <ResumeContent />;
+  return (
+    <main aria-label="Resume Page">
+      <ResumeContent />
+    </main>
+  );
 }

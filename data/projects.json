@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "getitdone.title",
+    "images": {
+      "dark-en": "/projects/getitdone/dark.jpg",
+      "dark-tr": "/projects/getitdone/dark.jpg",
+      "light-en": "/projects/getitdone/light.jpg",
+      "light-tr": "/projects/getitdone/light.jpg"
+    },
+    "description": "getitdone.description",
+    "liveUrl": "https://getitdone.furkangulabi.com",
+    "githubUrl": "https://github.com/FurkanGulabi/get-it-done-app.git",
+    "tags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Tanstack Query",
+      "Postgresql",
+      "Next-Auth",
+      "Shadcn",
+      "Prisma"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "rplace.title",
+    "images": {
+      "dark-en": "/projects/rplace/image.png",
+      "dark-tr": "/projects/rplace/image.png",
+      "light-en": "/projects/rplace/image.png",
+      "light-tr": "/projects/rplace/image.png"
+    },
+    "description": "rplace.description",
+    "liveUrl": "https://rplace.furkangulabi.com",
+    "githubUrl": "https://github.com/FurkanGulabi/r-place-clone.git",
+    "tags": ["React", "Express", "Tailwind CSS"]
+  },
+  {
+    "id": "3",
+    "title": "PGenerator.title",
+    "images": {
+      "dark-en": "/projects/PGenerator/dark-en.png",
+      "dark-tr": "/projects/PGenerator/dark-tr.png",
+      "light-en": "/projects/PGenerator/light-en.png",
+      "light-tr": "/projects/PGenerator/light-tr.png"
+    },
+    "description": "PGenerator.description",
+    "liveUrl": "https://password-generator.furkangulabi.com",
+    "githubUrl": "https://github.com/FurkanGulabi/password-generator.git",
+    "tags": ["Next.js", "Tailwind CSS", "Shadcn"]
+  }
+]

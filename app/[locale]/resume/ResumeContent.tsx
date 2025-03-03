@@ -154,30 +154,56 @@ const ResumeContent = () => {
   const t = useTranslations("ResumePage");
 
   return (
-    <section>
+    <section aria-label={t("PageTitle")}>
       <div className="container mx-auto mt-20">
         <Tabs
           defaultValue="aboutMe"
-          className="flex flex-col xl:flex-row gap-5  items-center"
+          className="flex flex-col xl:flex-row gap-5 items-center"
+          orientation="vertical"
         >
-          <TabsList className="flex flex-col w-full max-w-2xl mx-auto xl:mx-0 gap-6">
-            <TabsTrigger className="cursor-pointer" value="aboutMe">
+          <TabsList
+            className="flex flex-col w-full max-w-2xl mx-auto xl:mx-0 gap-6"
+            aria-label={t("ResumeCategories")}
+          >
+            <TabsTrigger
+              className="cursor-pointer"
+              value="aboutMe"
+              aria-controls="aboutMe-tab"
+            >
               {t("AboutMe")}
             </TabsTrigger>
-            <TabsTrigger className="cursor-pointer" value="education">
+            <TabsTrigger
+              className="cursor-pointer"
+              value="education"
+              aria-controls="education-tab"
+            >
               {t("Education")}
             </TabsTrigger>
-            <TabsTrigger className="cursor-pointer" value="experience">
+            <TabsTrigger
+              className="cursor-pointer"
+              value="experience"
+              aria-controls="experience-tab"
+            >
               {t("Experience")}
             </TabsTrigger>
-            <TabsTrigger className="cursor-pointer" value="skills">
+            <TabsTrigger
+              className="cursor-pointer"
+              value="skills"
+              aria-controls="skills-tab"
+            >
               {t("Skills")}
             </TabsTrigger>
           </TabsList>
 
           <div className="min-h-[62vh] w-full">
             {/* About Me */}
-            <TabsContent className="w-full" value="aboutMe">
+            <TabsContent
+              className="w-full"
+              value="aboutMe"
+              id="aboutMe-tab"
+              role="tabpanel"
+              aria-labelledby="aboutMe"
+            >
               <motion.div
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -185,19 +211,27 @@ const ResumeContent = () => {
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="flex items-center justify-center gap-2">
-                    {aboutMe.icon}
-                    <h2 className="text-xl font-semibold">
+                    <span aria-hidden="true">{aboutMe.icon}</span>
+                    <h2 id="aboutMe-heading" className="text-xl font-semibold">
                       {t("aboutMe.title")}
                     </h2>
                   </div>
-                  <p className="opacity-60 italic mt-8 text-center ">
-                    &quot;{t("aboutMe.description")}&quot;
+                  <p className="opacity-60 italic mt-8 text-center">
+                    <span aria-hidden="true">&quot;</span>
+                    {t("aboutMe.description")}
+                    <span aria-hidden="true">&quot;</span>
                   </p>
                 </div>
               </motion.div>
             </TabsContent>
             {/* Education */}
-            <TabsContent className="w-full" value="education">
+            <TabsContent
+              className="w-full"
+              value="education"
+              id="education-tab"
+              role="tabpanel"
+              aria-labelledby="education"
+            >
               <motion.div
                 key={"education"}
                 initial={{ x: 20, opacity: 0 }}
@@ -206,19 +240,27 @@ const ResumeContent = () => {
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="flex items-center justify-center gap-2">
-                    {education.icon}
-                    <h2 className="text-xl font-semibold">
+                    <span aria-hidden="true">{education.icon}</span>
+                    <h2
+                      id="education-heading"
+                      className="text-xl font-semibold"
+                    >
                       {t("education.title")}
                     </h2>
                   </div>
                   <p className="opacity-60 italic">
-                    &quot;{t(`education.description`)}&quot;
+                    <span aria-hidden="true">&quot;</span>
+                    {t(`education.description`)}
+                    <span aria-hidden="true">&quot;</span>
                   </p>
-                  <ul className="grid grid-cols-1 md:grid-cols-2  gap-8 mt-2 text-center font-semibold">
+                  <ul
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2 text-center font-semibold"
+                    aria-label={t("education.title")}
+                  >
                     {education.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" bg-white/10 backdrop-blur-md p-6 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5 "
+                        className="bg-white/10 backdrop-blur-md p-6 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
                       >
                         <ul className="flex flex-col gap-2 font-normal text-sm">
                           <li>
@@ -242,7 +284,13 @@ const ResumeContent = () => {
               </motion.div>
             </TabsContent>
             {/* Experience */}
-            <TabsContent className="w-full" value="experience">
+            <TabsContent
+              className="w-full"
+              value="experience"
+              id="experience-tab"
+              role="tabpanel"
+              aria-labelledby="experience"
+            >
               <motion.div
                 key={"experience"}
                 initial={{ x: 20, opacity: 0 }}
@@ -251,19 +299,27 @@ const ResumeContent = () => {
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="flex items-center justify-center gap-2">
-                    {experience.icon}
-                    <h2 className="text-xl font-semibold">
+                    <span aria-hidden="true">{experience.icon}</span>
+                    <h2
+                      id="experience-heading"
+                      className="text-xl font-semibold"
+                    >
                       {t(`experience.title`)}
                     </h2>
                   </div>
-                  <p className="opacity-60 italic text-center ">
-                    &quot;{t(`experience.description`)}&quot;
+                  <p className="opacity-60 italic text-center">
+                    <span aria-hidden="true">&quot;</span>
+                    {t(`experience.description`)}
+                    <span aria-hidden="true">&quot;</span>
                   </p>
-                  <ul className="grid grid-cols-1 md:grid-cols-2  gap-8 mt-2 text-center font-semibold">
+                  <ul
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2 text-center font-semibold"
+                    aria-label={t("experience.title")}
+                  >
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" bg-white/10 backdrop-blur-md w-auto p-6 px-20 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5 "
+                        className="bg-white/10 backdrop-blur-md w-auto p-6 px-20 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
                       >
                         <ul className="flex flex-col gap-2 font-normal text-sm">
                           <li>
@@ -287,7 +343,13 @@ const ResumeContent = () => {
               </motion.div>
             </TabsContent>
             {/* Skills */}
-            <TabsContent className="w-full" value="skills">
+            <TabsContent
+              className="w-full"
+              value="skills"
+              id="skills-tab"
+              role="tabpanel"
+              aria-labelledby="skills"
+            >
               <motion.div
                 key={"skills"}
                 initial={{ x: 20, opacity: 0 }}
@@ -296,35 +358,43 @@ const ResumeContent = () => {
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="flex items-center justify-center gap-2">
-                    {skills.icon}
-                    <h2 className="text-xl font-semibold">
+                    <span aria-hidden="true">{skills.icon}</span>
+                    <h2 id="skills-heading" className="text-xl font-semibold">
                       {t(`skills.title`)}
                     </h2>
                   </div>
                   <p className="opacity-60 italic">
-                    &quot;{t(`skills.description`)}&quot;
+                    <span aria-hidden="true">&quot;</span>
+                    {t(`skills.description`)}
+                    <span aria-hidden="true">&quot;</span>
                   </p>
-                  <ul className="grid grid-cols-3 md:grid-cols-4 gap-8 mt-2 text-center font-semibold">
+                  <ul
+                    className="grid grid-cols-3 md:grid-cols-4 gap-8 mt-2 text-center font-semibold"
+                    aria-label={t("skills.title")}
+                  >
                     {skills.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" bg-white/10 backdrop-blur-md rounded-lg flex justify-center items-center p-6"
+                        className="bg-white/10 backdrop-blur-md rounded-lg flex justify-center items-center p-6"
                       >
                         <Popover>
-                          <PopoverTrigger>{item.icon}</PopoverTrigger>
-                          <PopoverContent className=" !border-none !bg-white/5 backdrop-blur-md ">
+                          <PopoverTrigger aria-label={item.name}>
+                            <span aria-hidden="true">{item.icon}</span>
+                          </PopoverTrigger>
+                          <PopoverContent className="!border-none !bg-white/5 backdrop-blur-md">
                             <p className="text-lg text-center">{item.name}</p>
                             <div className="flex justify-center gap-2 items-center">
-                              <p>
+                              <span aria-hidden="true">
                                 <TbStarFilled />
-                              </p>
+                              </span>
                               <Progress
                                 value={((item.level - 1) / 4) * 100}
                                 className="w-[60%]"
+                                aria-label={`${item.name} skill level: ${item.level} out of 5`}
                               />
-                              <p className="flex">
+                              <span aria-hidden="true">
                                 <TbStarsFilled size={20} />
-                              </p>
+                              </span>
                             </div>
                           </PopoverContent>
                         </Popover>
