@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { ModeToggle } from "../common/theme-changer";
 
 export const links = [
   { id: "home", label: "Home", href: "/" },
@@ -29,7 +30,7 @@ const DesktopNav = () => {
   const normalizedPathname = normalizePath(pathname);
 
   return (
-    <ul className="flex gap-8">
+    <ul className="flex gap-8 items-center">
       {links.map((link) => {
         return (
           <li key={link.id}>
@@ -52,6 +53,9 @@ const DesktopNav = () => {
           </li>
         );
       })}
+      <li>
+        <ModeToggle />
+      </li>
     </ul>
   );
 };

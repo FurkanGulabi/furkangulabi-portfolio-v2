@@ -3,10 +3,10 @@
     "id": "1",
     "title": "getitdone.title",
     "images": {
-      "dark-en": "/projects/getitdone/dark.jpg",
-      "dark-tr": "/projects/getitdone/dark.jpg",
-      "light-en": "/projects/getitdone/light.jpg",
-      "light-tr": "/projects/getitdone/light.jpg"
+      "dark-en": "/projects/getitdone/dark.webp",
+      "dark-tr": "/projects/getitdone/dark.webp",
+      "light-en": "/projects/getitdone/light.webp",
+      "light-tr": "/projects/getitdone/light.webp"
     },
     "description": "getitdone.description",
     "liveUrl": "https://getitdone.furkangulabi.com",
@@ -25,10 +25,10 @@
     "id": "2",
     "title": "rplace.title",
     "images": {
-      "dark-en": "/projects/rplace/image.png",
-      "dark-tr": "/projects/rplace/image.png",
-      "light-en": "/projects/rplace/image.png",
-      "light-tr": "/projects/rplace/image.png"
+      "dark-en": "/projects/rplace/image.webp",
+      "dark-tr": "/projects/rplace/image.webp",
+      "light-en": "/projects/rplace/image.webp",
+      "light-tr": "/projects/rplace/image.webp"
     },
     "description": "rplace.description",
     "liveUrl": "https://rplace.furkangulabi.com",
@@ -39,10 +39,10 @@
     "id": "3",
     "title": "PGenerator.title",
     "images": {
-      "dark-en": "/projects/PGenerator/dark-en.png",
-      "dark-tr": "/projects/PGenerator/dark-tr.png",
-      "light-en": "/projects/PGenerator/light-en.png",
-      "light-tr": "/projects/PGenerator/light-tr.png"
+      "dark-en": "/projects/PGenerator/dark-en.webp",
+      "dark-tr": "/projects/PGenerator/dark-tr.webp",
+      "light-en": "/projects/PGenerator/light-en.webp",
+      "light-tr": "/projects/PGenerator/light-tr.webp"
     },
     "description": "PGenerator.description",
     "liveUrl": "https://password-generator.furkangulabi.com",

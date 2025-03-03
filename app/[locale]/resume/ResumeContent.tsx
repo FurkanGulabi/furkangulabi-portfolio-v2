@@ -260,7 +260,7 @@ const ResumeContent = () => {
                     {education.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-white/10 backdrop-blur-md p-6 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
+                        className="bg-primary/10 dark:bg-white/10 backdrop-blur-md p-6 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
                       >
                         <ul className="flex flex-col gap-2 font-normal text-sm">
                           <li>
@@ -319,7 +319,7 @@ const ResumeContent = () => {
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-white/10 backdrop-blur-md w-auto p-6 px-20 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
+                        className="bg-primary/10 dark:bg-white/10 backdrop-blur-md w-auto p-6 px-20 rounded-lg relative before:absolute before:w-4 before:h-4 before:rounded-full before:bg-primary before:left-5"
                       >
                         <ul className="flex flex-col gap-2 font-normal text-sm">
                           <li>
@@ -375,7 +375,7 @@ const ResumeContent = () => {
                     {skills.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-white/10 backdrop-blur-md rounded-lg flex justify-center items-center p-6"
+                        className="bg-primary/10 dark:bg-white/10 backdrop-blur-md rounded-lg flex justify-center items-center p-6"
                       >
                         <Popover>
                           <PopoverTrigger aria-label={item.name}>

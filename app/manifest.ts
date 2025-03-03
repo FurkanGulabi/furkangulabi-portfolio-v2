@@ -29,7 +29,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     categories: ["portfolio", "web development", "developer"],
     screenshots: [
       {
-        src: "/screenshot.jpg",
+        src: "/screenshot.webp",
         sizes: "1280x720",
         type: "image/png",
         label: "Homepage of Furkan Gülabi's Portfolio",

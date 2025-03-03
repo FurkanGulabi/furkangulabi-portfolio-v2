@@ -110,7 +110,6 @@ export default async function RootLayout({ children, params }: Props) {
         <Providers
           attribute="class"
           defaultTheme="dark"
-          enableSystem
           disableTransitionOnChange
         >
           <BackgroundGradientAnimation />
