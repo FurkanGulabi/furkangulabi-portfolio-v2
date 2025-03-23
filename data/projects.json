@@ -59,7 +59,7 @@
       "light-tr": "/projects/resume3/light.webp"
     },
     "description": "Resume3.description",
-    "liveUrl": "#",
+    "liveUrl": "https://resume3.furkangulabi.com",
     "githubUrl": "#",
     "tags": ["Next.js", "Tailwind CSS", "Shadcn","Next-Auth","Prisma","Postgresql","Tanstack Query","Zustand","Zod"]
   }
