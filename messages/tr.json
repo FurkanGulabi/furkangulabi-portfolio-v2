@@ -138,6 +138,10 @@
     "PGenerator": {
       "title": "Akıllı Şifre Oluşturucu",
       "description": "Kullanıcı girişine dayalı güçlü şifreler oluşturan akıllı bir şifre oluşturucu. Proje, React ile oluşturulmuştur."
+    },
+    "Resume3": {
+      "title": "Resume3",
+      "description": "Kullanıcıların yapay zeka aracılığıyla özgeçmişlerini oluşturmasına olanak tanıyan bir uygulama. "
     }
   }
 }

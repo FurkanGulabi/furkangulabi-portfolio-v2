@@ -8,20 +8,38 @@ import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
 
-  // Memoize the onClick handler
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const toggleTheme = React.useCallback(() => {
-    setTheme(resolvedTheme == "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
     console.log(resolvedTheme);
   }, [resolvedTheme, setTheme]);
+
+  if (!mounted) {
+    return (
+      <Button
+        variant="outline"
+        className="cursor-pointer"
+        size="icon"
+        aria-label="Toggle theme"
+      >
+        <Moon className="size-5" /> {/* Default fallback */}
+        <span className="sr-only">Toggle theme</span>
+      </Button>
+    );
+  }
 
   return (
     <Button
       variant="outline"
       className="cursor-pointer"
       size="icon"
-      onClick={toggleTheme} // Use the memoized handler
-      aria-label="Toggle theme" // Added aria-label for accessibility
+      onClick={toggleTheme}
+      aria-label="Toggle theme"
     >
       {resolvedTheme === "dark" ? (
         <Sun className="size-5" />

@@ -48,5 +48,19 @@
     "liveUrl": "https://password-generator.furkangulabi.com",
     "githubUrl": "https://github.com/FurkanGulabi/password-generator.git",
     "tags": ["Next.js", "Tailwind CSS", "Shadcn"]
+  },
+  {
+    "id": "4",
+    "title": "Resume3.title",
+    "images": {
+      "dark-en": "/projects/resume3/dark.webp",
+      "dark-tr": "/projects/resume3/dark.webp",
+      "light-en": "/projects/resume3/light.webp",
+      "light-tr": "/projects/resume3/light.webp"
+    },
+    "description": "Resume3.description",
+    "liveUrl": "#",
+    "githubUrl": "#",
+    "tags": ["Next.js", "Tailwind CSS", "Shadcn","Next-Auth","Prisma","Postgresql","Tanstack Query","Zustand","Zod"]
   }
 ]

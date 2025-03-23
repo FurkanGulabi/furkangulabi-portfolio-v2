@@ -1,7 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import Projects from "@/data/projects.json";
 import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
-import React from "react";
 
 export async function generateMetadata() {
   const locale = await getLocale();

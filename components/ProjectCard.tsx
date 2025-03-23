@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { InteractiveHoverButton } from "./magicui/hover-button";
 
@@ -16,6 +16,8 @@ import PGeneratorDarkEn from "@/public/projects/PGenerator/dark-en.webp";
 import PGeneratorDarkTr from "@/public/projects/PGenerator/dark-tr.webp";
 import PGeneratorLightEn from "@/public/projects/PGenerator/light-en.webp";
 import PGeneratorLightTr from "@/public/projects/PGenerator/light-tr.webp";
+import Resume3Dark from "@/public/projects/resume3/dark.webp";
+import Resume3Light from "@/public/projects/resume3/light.webp";
 import RPlace from "@/public/projects/rplace/image.webp";
 
 const imageMap: Record<string, StaticImageData> = {
@@ -26,6 +28,8 @@ const imageMap: Record<string, StaticImageData> = {
   "/projects/PGenerator/light-en.webp": PGeneratorLightEn,
   "/projects/PGenerator/light-tr.webp": PGeneratorLightTr,
   "/projects/rplace/image.webp": RPlace,
+  "/projects/resume3/dark.webp": Resume3Dark,
+  "/projects/resume3/light.webp": Resume3Light,
 };
 
 interface ProjectCardProps {
@@ -80,7 +84,7 @@ const ProjectCard = ({
       <div className="relative overflow-hidden aspect-video">
         <Image
           src={imageSrc}
-          placeholder="blur"
+          placeholder="empty"
           alt={t("projectImageAlt", { title })}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"

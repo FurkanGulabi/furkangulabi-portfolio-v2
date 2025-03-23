@@ -136,6 +136,10 @@
     "PGenerator": {
       "title": "Smart Password Generator",
       "description": "A smart password generator that generates strong passwords based on user input. The project is built with React."
+    },
+    "Resume3": {
+      "title": "Resume3",
+      "description": "An application that allows users to create their resumes through artificial intelligence."
     }
   }
 }

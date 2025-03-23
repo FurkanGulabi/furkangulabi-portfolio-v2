@@ -15,7 +15,6 @@ import {
 } from "next-intl/server";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { ReactNode } from "react";
 
 type Props = {
@@ -99,13 +98,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning suppressContentEditableWarning>
-      <head>
-        <Script
-          async
-          crossOrigin="anonymous"
-          src="//unpkg.com/react-scan/dist/auto.global.js"
-        />
-      </head>
+  
       <body className={`${PoppinsFont.variable} antialiased min-h-screen`}>
         <Providers
           attribute="class"
