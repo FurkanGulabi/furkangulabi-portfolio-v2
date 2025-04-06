@@ -37,11 +37,9 @@
       "Next.js",
       "Tailwind CSS",
       "Shadcn",
-      "Next-Auth",
+      "Better-auth",
       "Prisma",
       "Postgresql",
-      "Tanstack Query",
-      "Zustand",
       "Zod"
     ]
   },
