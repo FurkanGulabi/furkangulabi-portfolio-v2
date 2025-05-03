@@ -45,38 +45,23 @@
   },
   {
     "id": "3",
-    "title": "rplace.title",
+    "title": "AIRecipe.title",
     "images": {
-      "dark-en": "/projects/rplace/image.webp",
-      "dark-tr": "/projects/rplace/image.webp",
-      "light-en": "/projects/rplace/image.webp",
-      "light-tr": "/projects/rplace/image.webp"
+      "dark-en": "/projects/airecipe/dark.webp",
+      "dark-tr": "/projects/airecipe/dark.webp",
+      "light-en": "/projects/airecipe/light.webp",
+      "light-tr": "/projects/airecipe/light.webp"
     },
-    "description": "rplace.description",
-    "liveUrl": "https://rplace.furkangulabi.com",
-    "githubUrl": "https://github.com/FurkanGulabi/r-place-clone.git",
-    "tags": [
-      "React",
-      "Express",
-      "Tailwind CSS"
-    ]
-  },
-  {
-    "id": "4",
-    "title": "PGenerator.title",
-    "images": {
-      "dark-en": "/projects/PGenerator/dark-en.webp",
-      "dark-tr": "/projects/PGenerator/dark-tr.webp",
-      "light-en": "/projects/PGenerator/light-en.webp",
-      "light-tr": "/projects/PGenerator/light-tr.webp"
-    },
-    "description": "PGenerator.description",
-    "liveUrl": "https://password-generator.furkangulabi.com",
-    "githubUrl": "https://github.com/FurkanGulabi/password-generator.git",
+    "description": "AIRecipe.description",
+    "liveUrl": "https://ai-recipe.furkangulabi.com",
+    "githubUrl": "https://github.com/FurkanGulabi/ai-recipe-generator.git",
     "tags": [
       "Next.js",
       "Tailwind CSS",
-      "Shadcn"
+      "OpenAI API",
+      "Shadcn",
+      "AI-SDK",
+      "Zod"
     ]
   }
 ]

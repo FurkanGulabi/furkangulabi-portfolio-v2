@@ -10,26 +10,20 @@ import { FaGithub } from "react-icons/fa";
 import { InteractiveHoverButton } from "./magicui/hover-button";
 
 // Define the image map with static imports
+import AIRecipeDark from "@/public/projects/airecipe/dark.webp";
+import AIRecipeLight from "@/public/projects/airecipe/light.webp";
 import GetItDoneDark from "@/public/projects/getitdone/dark.webp";
 import GetItDoneLight from "@/public/projects/getitdone/light.webp";
-import PGeneratorDarkEn from "@/public/projects/PGenerator/dark-en.webp";
-import PGeneratorDarkTr from "@/public/projects/PGenerator/dark-tr.webp";
-import PGeneratorLightEn from "@/public/projects/PGenerator/light-en.webp";
-import PGeneratorLightTr from "@/public/projects/PGenerator/light-tr.webp";
 import Resume3Dark from "@/public/projects/resume3/dark.webp";
 import Resume3Light from "@/public/projects/resume3/light.webp";
-import RPlace from "@/public/projects/rplace/image.webp";
 
 const imageMap: Record<string, StaticImageData> = {
   "/projects/getitdone/dark.webp": GetItDoneDark,
   "/projects/getitdone/light.webp": GetItDoneLight,
-  "/projects/PGenerator/dark-en.webp": PGeneratorDarkEn,
-  "/projects/PGenerator/dark-tr.webp": PGeneratorDarkTr,
-  "/projects/PGenerator/light-en.webp": PGeneratorLightEn,
-  "/projects/PGenerator/light-tr.webp": PGeneratorLightTr,
-  "/projects/rplace/image.webp": RPlace,
   "/projects/resume3/dark.webp": Resume3Dark,
   "/projects/resume3/light.webp": Resume3Light,
+  "/projects/airecipe/dark.webp": AIRecipeDark,
+  "/projects/airecipe/light.webp": AIRecipeLight,
 };
 
 interface ProjectCardProps {

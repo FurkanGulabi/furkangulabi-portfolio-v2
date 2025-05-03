@@ -44,7 +44,6 @@
     "PageTitle": "Özgeçmiş",
     "AboutMe": "Hakkımda",
     "ResumeCategories": "Özgeçmiş Kategorileri",
-
     "Education": "Eğitimim",
     "Experience": "Tecrübem",
     "Skills": "Yeteneklerim",
@@ -104,7 +103,6 @@
     "quoteOwner": "-Jack London",
     "form": {
       "title": "Bana ulaşın",
-
       "name": "İsim",
       "Surname": "Soyisim",
       "Email": "E-posta",
@@ -131,17 +129,13 @@
       "title": "Get It Done",
       "description": "Get It Done, sizi işlerinizi halletmenize yardımcı olan basit bir yapılacaklar listesi uygulamasıdır. React ve Redux ile oluşturulmuştur."
     },
-    "rplace": {
-      "title": "r/place klonu",
-      "description": "Reddit'in r/place projesinin bir klonu. Kullanıcılar, kendi seçtikleri bir renkle tuval üzerine çizebilirler. Proje, React ve Firebase ile oluşturulmuştur."
-    },
-    "PGenerator": {
-      "title": "Akıllı Şifre Oluşturucu",
-      "description": "Kullanıcı girişine dayalı güçlü şifreler oluşturan akıllı bir şifre oluşturucu. Proje, React ile oluşturulmuştur."
-    },
     "Resume3": {
       "title": "Resume3",
       "description": "Kullanıcıların yapay zeka aracılığıyla özgeçmişlerini oluşturmasına olanak tanıyan bir uygulama. "
+    },
+    "AIRecipe": {
+      "title": "AI Recipe Generator",
+      "description": "Yapay zeka destekli tarif oluşturucu uygulaması. Kullanıcıların malzemeleri girmesine ve yapay zekanın tarif oluşturmasına olanak tanır."
     }
   }
 }
